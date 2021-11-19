@@ -1,3 +1,3 @@
-var hoge = "fuga"
+var hoge = "fuga";
 
-const foo = "bar"
+const foo = "bar";

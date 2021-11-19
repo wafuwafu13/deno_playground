@@ -1,5 +1,5 @@
-import { parse } from "https://deno.land/std@0.115.1/node/querystring.ts"
-import { assertEquals } from "https://deno.land/std@0.115.1/testing/asserts.ts"
+import { parse } from "https://deno.land/std@0.115.1/node/querystring.ts";
+import { assertEquals } from "https://deno.land/std@0.115.1/testing/asserts.ts";
 
 Deno.test({
   name: "parse",
