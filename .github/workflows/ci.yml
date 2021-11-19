@@ -29,8 +29,9 @@ jobs:
           deno-version: 1.x.x
 
       - name: Format TS
-        run: deno fmt --check
-        run: deno lint lint/
+        run: | 
+            deno fmt --check
+            deno lint lint/
 
       - name: Run tests canary
         run: deno test --allow-all
