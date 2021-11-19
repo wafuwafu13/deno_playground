@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
       matrix:
         deno: [canary]
-        os: [macOS-latest, ubuntu-latest, windows-2019]
+        os: [macOS-latest]
 
     steps:
       - name: Clone repository
@@ -27,6 +27,9 @@ jobs:
         uses: denoland/setup-deno@v1.0.0
         with:
           deno-version: ${{ matrix.deno }}
+
+      - name: Format TS
+        run: deno fmt --check
 
       - name: Run tests canary
         run: deno test --allow-all
