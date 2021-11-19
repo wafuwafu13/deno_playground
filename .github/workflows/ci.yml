@@ -30,8 +30,6 @@ jobs:
 
       - name: Format TS
         run: deno fmt --check
-
-      - name: Lint TS
         run: deno lint lint/
 
       - name: Run tests canary
