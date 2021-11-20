@@ -1,3 +1,4 @@
-var hoge = "fuga";
+// deno-lint-ignore no-var
+var _hoge = "fuga";
 
-const foo = "bar";
+const _foo = "bar";
