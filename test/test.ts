@@ -4,5 +4,6 @@ Deno.test({
   name: "first test",
   fn() {
     assertEquals(1, 1);
+    assertEquals(2, 2);
   },
 });
